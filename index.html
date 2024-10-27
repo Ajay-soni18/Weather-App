@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weatcher App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-800 text-white h-screen">
+    <div class="container mx-auto justify-center items-center text-center">
+      <h1 class="text-3xl pt-4 font-bold mb-4">Weather App</h1>
+      <div
+        class="text-center mb-4 justify-center items-center bg-gray-600 rounded-lg p-4 w-auto mx-auto"
+      >
+        <h2 class="text-2xl md:3xl font-semibold mb-4">
+          Type the name of the city
+        </h2>
+        <input
+          type="text"
+          id="cityName"
+          class="w-full px-3 py-2 bg-gray-800 rounded hover:text-blue-500"
+          placeholder="city Name"
+        />
+        <button
+          class="bg-gray-900 mt-4 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded hover:text-blue-500"
+          id="searchBtn"
+        >
+          Search
+        </button>
+        <div class="hidden" id="weather-info">
+          <h2 class="text-2xl md:3xl" id="city-name">city name :</h2>
+          <p class="text-2xl md:3xl" id="temperature">Temperature :</p>
+          <p class="text-2xl md:3xl" id="description">Text</p>
+        </div>
+        <p class="text-2xl text-red-500 hidden" id="Error">
+          City not found, please try again.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
